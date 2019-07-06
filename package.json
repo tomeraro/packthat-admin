@@ -1,0 +1,36 @@
+{
+  "name": "packthat-admin",
+  "version": "1.0.0",
+  "description": "office panel",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "author": "Tomer Aronovsky",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.0.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^4.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  },
+  "-vs-binding": {
+    "BeforeBuild": [
+      "build"
+    ],
+    "ProjectOpened": [
+      "dev"
+    ]
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
